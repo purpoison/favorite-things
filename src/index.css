@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(170, 235, 202); */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+section{
+  border: 1px solid rgb(184,191,253);
+  padding: 20px;
+  margin: 20px;
+}
+.container{
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+header, footer{
+  background-color: rgb(184,191,253);
+  padding: 20px 0;
+  color: #fff;
+}
+.footer{
+  text-align: center;
+  padding: 10px 0 40px 0;
+}
+.test1{
+  background:center url('../public/img/1.png') no-repeat ;
+  height: 72px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.content-wrapper{
+  display: flex;
+  gap: 20px;
+}
+.content-wrapper img{
+  max-width: 100%;
+}
+.violet{
+  color: rgb(184,191,253);
+}
+.review-item{
+  padding: 10px;
+  border: 1px solid rgb(184,191,253);
+  margin-bottom: 20px;
+}
+.menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.menu li a{
+  padding: 10px 5px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all ease-in 0.2s;
+}
+.menu li a:hover{
+  color:  rgb(243,241,234);
+  border: 1px solid rgb(215, 214, 207);
+}
+.album-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px
+}
+.album-wrap img{
+  max-width: 268px;
+  max-height: 268px;
+}
+.band-img{
+  max-width: 50%;
+}
+.band-img img{
+  max-width: 50%;
+}
+.album-item{
+  padding: 5px;
+  border: 1px solid rgb(184,191,253);
+}
+.member-list{
+  margin: 0;
+  padding-inline-start: 20px;
+}
+.text-band{
+  flex: 1 1 20%;
+}
+.recipe-wrap img{
+  max-width: 100%;
+}
+.recipe-img{
+  flex: 1 1 40%;
+}
+.recipe-wrap h1{
+  margin-top: 0;
 }

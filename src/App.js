@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import FavoriteBook from './Components/favorites/FavoriteBook';
+import FavoriteBand from './Components/favorites/FavoriteBand';
+import FavoriteRecipe from './Components/favorites/FavoriteRecipe';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+  render(){
+    return (
+      <div className='wrap'>
+        <Header/>
+        <div className='container'>
+          <test/>
+          <section id='fbook'>
+            <div className='test1'></div>
+            <FavoriteBook/>
+          </section>
+          <section id='fband'>
+          <div className='test1'></div>
+            <FavoriteBand/>
+          </section>
+          <section id='frecipe'>
+          <div className='test1'></div>
+            <FavoriteRecipe/>
+          </section>
+        </div>
+        <Footer/>
+      </div>
+      );
+    }
+  }
+
 
 export default App;
